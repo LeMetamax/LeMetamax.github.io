@@ -4,6 +4,9 @@ google.com, pub-1055823031892999, DIRECT, f08c47fec0942fa0
 # Meta / Facebook
 facebook.com, 912233741590560, DIRECT, c3e20eee3f780d68
 
+# Liftoff
+vungle.com, 6a1c62094bca6570e1166cbd, DIRECT, c107d686becd2d77
+
 # Yandex
 e-planning.net, 2f3a04630ba9ba3f, RESELLER, c1ba615865ed87b2
 pubmatic.com, 165157, RESELLER, 5d62403b186f2ace
