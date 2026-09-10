@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="aeb-0CgUX8gqA7Yte4ghg3o2e0UlElzOwDvYr4g5qKM" />
+    <title>Gozcorp Games | Independent Game Studio</title>
+    <meta name="description" content="Official website of Gozcorp Games. Creators of Exbots Revolution, Velocity Rush: Speed Hero, and high-octane 3D mobile games.">
+    <style>
+        :root {
+            --bg-dark: #0a0d14;
+            --card-bg: #121722;
+            --accent-blue: #0084ff;
+            --accent-glow: #00d4ff;
+            --text-main: #e6edf3;
+            --text-sub: #8b949e;
+            --border-color: #212836;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Studio Hero */
+        header {
+            text-align: center;
+            padding: 100px 20px 80px;
+            background: radial-gradient(circle at top, #1a233a 0%, var(--bg-dark) 80%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .studio-tag {
+            display: inline-block;
+            background: rgba(0, 132, 255, 0.1);
+            color: var(--accent-glow);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 212, 255, 0.25);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3.8rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -1.5px;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #ffffff 40%, var(--text-sub));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .lead-text {
+            font-size: 1.35rem;
+            color: var(--text-sub);
+            max-width: 720px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        /* Main Section */
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 70px 24px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-sub);
+        }
+
+        /* Game Catalog Grid */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 28px;
+            margin-bottom: 80px;
+        }
+
+        .game-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.25 ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 132, 255, 0.5);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-card.featured {
+            border: 1px solid rgba(0, 212, 255, 0.35);
+            background: linear-gradient(180deg, #182236 0%, var(--card-bg) 100%);
+        }
+
+        .game-badge {
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--accent-glow);
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .game-card h3 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .game-card p {
+            color: var(--text-sub);
+            font-size: 0.98rem;
+            margin-bottom: 24px;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+
+        .card-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-link {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border-color);
+            padding: 9px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-link:hover {
+            background-color: var(--accent-blue);
+            border-color: var(--accent-blue);
+        }
+
+        /* Community & Devlogs */
+        .community-section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 48px 32px;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 28px;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #0d1117;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 12px 22px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 600;
+            transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-glow);
+            color: #ffffff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 45px 20px;
+            border-top: 1px solid var(--border-color);
+            background-color: #06080c;
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            margin-bottom: 18px;
+        }
+
+        .footer-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin: 0 12px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-glow);
+        }
+
+        .copyright-tag {
+            font-size: 0.85rem;
+            color: #57606a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="studio-tag">Independent Game Studio</span>
+        <h1>Gozcorp Games</h1>
+        <p class="lead-text">Developing high-octane 3D action, sci-fi, and mobile gaming experiences.</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="section-header">
+            <h2 class="section-title">Our Game Catalog</h2>
+            <p class="section-subtitle">Explore original titles available on Android, iOS, and PC platforms.</p>
+        </div>
+
+        <div class="games-grid">
+            
+            <!-- Exbots Revolution -->
+            <div class="game-card featured">
+                <div>
+                    <span class="game-badge">Featured Release</span>
+                    <h3>Exbots Revolution</h3>
+                    <p>A fast-paced 3D platformer shooter combining fluid movement mechanics with intense sci-fi combat, tactical weapon upgrades, and boss encounters.</p>
+                </div>
+                <div class="card-links">
+                    <a href="./Exbots-Revolution/" class="btn-link">Official Site</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.GozcorpGames.ExbotsRevolution" target="_blank" class="btn-link">Google Play</a>
+                    <a href="https://apps.apple.com/app/exbots-revolution/id6740638062" target="_blank" class="btn-link">App Store</a>
+                </div>
+            </div>
+
+            <!-- Velocity Rush: Speed Hero -->
+            <div class="game-card">
+                <div>
+                    <span class="game-badge">3D Parkour Runner</span>
+                    <h3>Velocity Rush: Speed Hero</h3>
+                    <p>First-person parkour action runner featuring fluid movement mechanics, wall-running, vaulting, and intense high-speed obstacle navigation.</p>
+                </div>
+                <div class="card-links">
+                    <a href="https://play.google.com/store/apps/developer?id=Gozcorp+Games" target="_blank" class="btn-link">Google Play Store</a>
+                </div>
+            </div>
+
+            <!-- Assassin 3D -->
+            <div class="game-card">
+                <div>
+                    <span class="game-badge">Stealth Action</span>
+                    <h3>Assassin 3D</h3>
+                    <p>Tactical 3D stealth action game centered around target elimination, stealth navigation, and high-risk mission execution.</p>
+                </div>
+                <div class="card-links">
+                    <a href="https://play.google.com/store/apps/developer?id=Gozcorp+Games" target="_blank" class="btn-link">Google Play Store</a>
+                </div>
+            </div>
+
+            <!-- Chaos Cleaner -->
+            <div class="game-card">
+                <div>
+                    <span class="game-badge">Arcade Shooter</span>
+                    <h3>Chaos Cleaner</h3>
+                    <p>Fast-paced arcade challenge where players clear chaotic battle environments against aggressive, escalating target waves.</p>
+                </div>
+                <div class="card-links">
+                    <a href="https://play.google.com/store/apps/developer?id=Gozcorp+Games" target="_blank" class="btn-link">Google Play Store</a>
+                </div>
+            </div>
+
+            <!-- Missile Balloon -->
+            <div class="game-card">
+                <div>
+                    <span class="game-badge">Arcade Challenge</span>
+                    <h3>Missile Balloon</h3>
+                    <p>Evasive arcade title testing quick reflexes and spatial positioning against incoming defense systems and obstacles.</p>
+                </div>
+                <div class="card-links">
+                    <a href="https://play.google.com/store/apps/developer?id=Gozcorp+Games" target="_blank" class="btn-link">Google Play Store</a>
+                </div>
+            </div>
+
+            <!-- Spaceship Clash -->
+            <div class="game-card">
+                <div>
+                    <span class="game-badge">Space Combat</span>
+                    <h3>Spaceship Clash</h3>
+                    <p>Sci-fi space shooter featuring intense dogfights, tactical ship maneuvers, and hostile fleet encounters across dynamic arenas.</p>
+                </div>
+                <div class="card-links">
+                    <a href="https://play.google.com/store/apps/developer?id=Gozcorp+Games" target="_blank" class="btn-link">Google Play Store</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Studio Updates & Socials -->
+        <div class="community-section">
+            <h2 class="section-title">Studio Updates & Devlogs</h2>
+            <p class="section-subtitle">Follow devlog videos, gameplay reveals, and studio announcements across our media channels.</p>
+            
+            <div class="social-links">
+                <a href="https://youtube.com/@GozcorpGames" target="_blank" class="social-btn">YouTube Devlogs</a>
+                <a href="https://gozcorpgames.itch.io/" target="_blank" class="social-btn">Itch.io Projects</a>
+                <a href="https://twitter.com/GozcorpGames" target="_blank" class="social-btn">X / Twitter</a>
+                <a href="https://instagram.com/GozcorpGames" target="_blank" class="social-btn">Instagram</a>
+                <a href="https://facebook.com/GozcorpGames" target="_blank" class="social-btn">Facebook Page</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="./Exbots-Revolution/privacy-policy/">Privacy Policy</a> | 
+            <a href="./Exbots-Revolution/terms-and-conditions/">Terms & Conditions</a> | 
+            <a href="./app-ads.txt" target="_blank">app-ads.txt</a> | 
+            <a href="mailto:gozcorpgames@gmail.com">Contact Studio</a>
+        </div>
+        <p class="copyright-tag">&copy; Gozcorp Games. Founded by Chiagozie Ogbonna. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
