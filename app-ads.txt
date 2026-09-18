@@ -1,3 +1,8 @@
+# ==========================================
+# OWNER DOMAIN REQUIREMENT (IAB v1.1)
+# ==========================================
+ownerdomain=lemetamax.github.io
+
 # Google AdMob
 google.com, pub-1055823031892999, DIRECT, f08c47fec0942fa0
 
@@ -174,7 +179,13 @@ video.unrulymedia.com, 475093422, RESELLER
 rubiconproject.com, 27714, RESELLER, 0bfd66d529a55807
 orbrx.ai, 8000869124, RESELLER
 
-# UNITY ADS and possibly levelplay and ironsource
+# UNITY ADS / LEVELPLAY / IRONSOURCE DIRECT & RESELLERS
+# ironSource Direct Line
+ironsrc.com, 653357, DIRECT
+
+# Unity Ads Direct Line
+unity.com, 1525130, DIRECT, 96cabb5fbdde37a7
+
 adagio.io, 1522, RESELLER
 adagio.io, 1575, RESELLER
 admanmedia.com, 2242, RESELLER
@@ -310,7 +321,6 @@ triplelift.com, 14127, RESELLER, 6c33edb13117fd86
 triplelift.com, 14594, RESELLER, 6c33edb13117fd86
 triplelift.com, 14716, RESELLER, 6c33edb13117fd86
 undertone.com, 4108, RESELLER
-unity.com, 1525130, DIRECT, 96cabb5fbdde37a7
 ushareit.com, lcb555b3bc8667a09a, RESELLER
 video.unrulymedia.com, 144138083, RESELLER
 video.unrulymedia.com, 389957698, RESELLER
@@ -324,7 +334,6 @@ zetaglobal.net, 630, RESELLER
 zmaticoo.com, 5135195, RESELLER
 
 # InMobi + Resellers
-inmobi.com, [YOUR_ID], DIRECT, [ID]
 inmobi.com, aab09787bca94599a317fd48932d63fd, DIRECT, 83e75a7ae333ca9d
 mintegral.com, 10003, RESELLER
 thunder-monetize.com, 3905806597, RESELLER
